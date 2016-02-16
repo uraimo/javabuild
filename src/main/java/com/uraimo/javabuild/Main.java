@@ -1,7 +1,6 @@
 package com.uraimo.javabuild;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Umberto Raimondi on 16/02/16.
@@ -16,21 +15,39 @@ public class Main {
         }
     }
 
-    private static HashMap<String,String> options = new HashMap<>();
+
+    private static boolean areArgsValid(String... args){
+        boolean valid = true;
+
+        if(args.length==0){
+            return false;
+        }
+
+        for(String arg : args){
+            if( (arg.startsWith("--"))&&(!commands.containsKey(arg)) ) {
+                return false;
+            }
+        }
+
+        return valid;
+    }
+
+    private static HashMap<String,String> commands = new HashMap<>();
 
     static{
-        options.put("--init","Creates a new project with a basic Build.java");
+        commands.put("--init","Creates a new project with a basic Build.java");
+        commands.put("--clean","Clean the project from all the javabuild artifacts");
     }
 
     private static void printUsage(String error) {
-        if (error.isEmpty()) {
+        if (!error.isEmpty()) {
             System.out.println("Error: " + error);
         }
         System.out.println("Usage:\n");
         System.out.println("javabuild <commands>\n");
         System.out.println("Options:");
-        for (String option : options.keySet()) {
-            System.out.println(option+"     "+options.get(option));
+        for (String option : commands.keySet()) {
+            System.out.println(option+"     "+ commands.get(option));
         }
     }
 
