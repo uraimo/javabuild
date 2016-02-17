@@ -2,6 +2,7 @@ package com.uraimo.javabuild;
 
 import com.uraimo.javabuild.commands.Clean;
 import com.uraimo.javabuild.commands.Command;
+import com.uraimo.javabuild.commands.Compile;
 import com.uraimo.javabuild.commands.Init;
 
 import java.io.IOException;
@@ -18,6 +19,7 @@ public class Main {
     public static void main(String... args) throws IOException{
         if (!areArgsValid(args)) {
             printUsage("");
+            System.exit(0);
         }
 
         HashMap<String, String[]> pargs = parseArguments(args);
@@ -74,6 +76,8 @@ public class Main {
         commandClasses.put("--init", new Init());
         commands.put("--clean", "Clean the project from all the javabuild artifacts");
         commandClasses.put("--clean", new Clean());
+        commands.put("--compile", "Compile the project");
+        commandClasses.put("--compile", new Compile());
     }
 
     private static void printUsage(String error) {

@@ -9,7 +9,7 @@ TODO:
 - [ ] Support external local dependencies (i.e jar in a folder)
 - [ ] Support external dependencies via maven central or the similar gradle thing
 - [ ] Support external javabuild-ready dependencies from github, get them, build them, use them
-- [ ] It should be able to build itself
+- [x] It should be able to build itself
 - [ ] Allow to include other file types in the resulting jar
 - [ ] Configurable output: jar,fatjar,war,whatever
 
