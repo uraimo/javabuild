@@ -5,6 +5,7 @@ import com.uraimo.javabuild.commands.Command;
 import com.uraimo.javabuild.commands.Compile;
 import com.uraimo.javabuild.commands.Init;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +18,12 @@ public class Main {
 
 
     public static void main(String... args) throws IOException{
+        if(!new File("Build.java").exists()){
+            System.out.print("Missing Build.java, init your project with javabuild --init, exiting.");
+            System.exit(0);
+        }
+
+
         if (!areArgsValid(args)) {
             printUsage("");
             System.exit(0);
