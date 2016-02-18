@@ -1,6 +1,8 @@
 package com.uraimo.javabuild.modules;
 
 /**
+ * A module that points to java sources in the usual source location
+ *
  * Created by Umberto Raimondi on 17/02/16.
  */
 public class SrcModule {

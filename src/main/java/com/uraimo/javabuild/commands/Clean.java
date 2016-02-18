@@ -10,13 +10,21 @@ import java.nio.file.attribute.BasicFileAttributes;
 import static java.nio.file.Paths.*;
 
 /**
+ * Command that cleans the project removing target artifacts and dependencies
+ *
  * Created by Umberto Raimondi on 16/02/16.
  */
 public class Clean implements Command{
 
+    /**
+     * Clean the target and dependencies directory
+     *
+     * @param parameters
+     * @throws IOException
+     */
     @Override
     public void execute(String... parameters) throws IOException{
-        SimpleFileVisitor deleteAll = new SimpleFileVisitor<Path>() {
+        SimpleFileVisitor<Path> deleteAll = new SimpleFileVisitor<Path>() {
             @Override
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
                 Files.delete(file);
@@ -38,3 +46,4 @@ public class Clean implements Command{
         Files.walkFileTree(directory,deleteAll);
     }
 }
+

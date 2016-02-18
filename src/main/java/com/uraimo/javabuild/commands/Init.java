@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
+ * Init commands, create a basic javabuild module
+ *
  * Created by Umberto Raimondi on 16/02/16.
  */
 public class Init implements Command {
