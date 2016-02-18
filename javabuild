@@ -1,0 +1,3 @@
+#!/bin/sh
+
+$JAVA_HOME/jre/bin/java -cp out/production/javabuild/ com.uraimo.javabuild.Main $@
