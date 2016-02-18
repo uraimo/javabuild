@@ -4,7 +4,35 @@
 
 What if Java had something similar to the Swift Package Manager, a straightforward extensible Java build tool with a configuration written completely in Java?
 
-TODO:
+
+### Usage
+
+JavaBuild is a build tool (ANT,Maven,Gradle,...) that uses configuration files written in pure Java.
+Every project has a `Build.java` file that contains all the configuration to compile the module (the basic unit that JavaBuild manages, in other words a project with some sources).
+
+Init a project (it creates the standard Maven src directory and a simple Build.java):
+
+```
+./javabuild --init
+```
+
+Compile the content of a project (you'll find the result .class files in target/):
+```
+./javabuild --compile
+```
+
+Build a jar (you'll find the resulting jar in target/):
+```
+./javabuild --jar
+```
+
+Clean the project removing all artifacts built by JavaBuild:
+```
+./javabuild --clean
+```
+
+
+### TODO
 - [x] It should be able to build itself
 - [ ] In dire need of a refactoring
 - [ ] Add unit/integration tests
