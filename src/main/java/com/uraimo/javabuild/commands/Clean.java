@@ -40,10 +40,14 @@ public class Clean implements Command{
         };
 
         Path directory = get(Defaults.TARGETDIR);
-        Files.walkFileTree(directory,deleteAll);
+        if(directory.toFile().exists()) {
+            Files.walkFileTree(directory, deleteAll);
+        }
 
         directory = get(Defaults.DEPENDENCIESDIR);
-        Files.walkFileTree(directory,deleteAll);
+        if(directory.toFile().exists()) {
+            Files.walkFileTree(directory, deleteAll);
+        }
     }
 }
 

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e6e097b-8f0a-4bed-9207-be64ca3c00c8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Command.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Init.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Init.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/GitModule.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/GitModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/Module.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/Module.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/SrcModule.java" afterPath="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/modules/SrcModule.java" />
     </list>
     <ignored path="javabuild.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clean.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Clean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.8007968">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Compile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28286853">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="11" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/util/ManifestBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Jar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java" />
       </list>
     </option>
   </component>
@@ -978,20 +970,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <caret line="92" column="11" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Compile.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/nio/file/Paths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28286853">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1553785">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding>
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2741#2742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/uraimo/javabuild/commands/Clean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8007968">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
