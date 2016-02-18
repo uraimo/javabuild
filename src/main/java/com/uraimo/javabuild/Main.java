@@ -1,9 +1,6 @@
 package com.uraimo.javabuild;
 
-import com.uraimo.javabuild.commands.Clean;
-import com.uraimo.javabuild.commands.Command;
-import com.uraimo.javabuild.commands.Compile;
-import com.uraimo.javabuild.commands.Init;
+import com.uraimo.javabuild.commands.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -85,6 +82,8 @@ public class Main {
         commandClasses.put("--clean", new Clean());
         commands.put("--compile", "Compile the project");
         commandClasses.put("--compile", new Compile());
+        commands.put("--jar", "Compile the project and package it in a jar");
+        commandClasses.put("--jar", new CombinedCommand(new Compile(),new Jar()) );
     }
 
     private static void printUsage(String error) {
