@@ -18,5 +18,7 @@ public class SrcModule {
     }
 
 
-    public void performPrebuildActions(){}
+    public void performPrebuildActions(){
+        //Nothing to do here
+    }
 }

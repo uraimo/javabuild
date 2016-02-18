@@ -47,9 +47,11 @@ public class Jar implements Command {
         if(files.size()==0)
             return;
 
+        //TODO: The jar name should be defined by the content of Build.java
         File output=new File(Defaults.TARGETDIR+"/test.jar");
 
         ManifestBuilder mb = new ManifestBuilder();
+        //TODO: Fill the manifest with configuration taken from Build.java
 
         createJarArchive(output,mb.getManifest(),files.toArray(new File[0]));
     }

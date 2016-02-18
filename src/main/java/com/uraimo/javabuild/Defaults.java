@@ -5,6 +5,7 @@ package com.uraimo.javabuild;
  */
 public class Defaults {
 
+    //TODO: Needs better structured defaults?
     public static final String DEPENDENCIESDIR = ".dependencies";
 
     public static final String TARGETDIR = "./target";

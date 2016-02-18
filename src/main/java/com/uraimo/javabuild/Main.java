@@ -26,6 +26,9 @@ public class Main {
             System.exit(0);
         }
 
+        //TODO: Compile Build.java and load it before executing any command!
+        //
+
         HashMap<String, String[]> pargs = parseArguments(args);
 
         for (String arg : pargs.keySet()) {

@@ -6,6 +6,9 @@ What if Java had something similar to the Swift Package Manager, a straightforwa
 
 TODO:
 - [x] It should be able to build itself
+- [ ] In dire need of a refactoring
+- [ ] Add unit/integration tests
+- [ ] Add support for test (specific command)
 - [ ] Actually reading and compiling Build.java
 - [ ] Build a simple javabuild-ready Hello World
 - [ ] Build a project with multiple interdependent java files, solving the dependency graph, incremental build
@@ -14,4 +17,3 @@ TODO:
 - [ ] Support external javabuild-ready dependencies from github, get them, build them, use them
 - [ ] Allow to include other file types in the resulting jar
 - [ ] Configurable output: jar,fatjar,war,whatever
-
